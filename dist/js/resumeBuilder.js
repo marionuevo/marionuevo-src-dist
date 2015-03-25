@@ -77,7 +77,7 @@
 		{
 			title: ".self",
 			dates: "2015",
-			description: "My Own Portfilio / Resume. Using AngularJS, Bootstrap and jQuery.",
+			description: "My Own Portfilio / Resume. Using AngularJS, Bootstrap and jQuery. Optimized using Gulp.",
 			image: "images/portfolio.png",
 			url: "http://www.marionuevo.com/"
 		}];

@@ -39,7 +39,7 @@ gulp.task('bower-to-dist', function() {
 });
 
 gulp.task('watch', function (){
-	gulp.watch('src/css/*.css', tasks);
+	gulp.watch(['src/css/*.css', 'src/*.html', 'src/images/*', 'src/js/*.js'], tasks);
 });
 
 tasks.push('watch');
