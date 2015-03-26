@@ -1,4 +1,7 @@
-// shim layer with setTimeout fallback
+/**
+ * scroll optimizer code.
+ *
+ */
 window.requestAnimFrame = (function(){
 	return  window.requestAnimationFrame       ||
 			window.webkitRequestAnimationFrame ||
@@ -34,7 +37,7 @@ window.requestAnimFrame = (function(){
 
 	function updateElements () {
 
-		prefix(mainBG.style, "Transform", "translate3d(0," + 0 + 'px, 0)');
+		//prefix(mainBG.style, "Transform", "translate3d(0," + 0 + 'px, 0)');
 		ticking = false;
 	}
 

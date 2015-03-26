@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var minifyCSS = require('gulp-minify-css');
 var htmlmin = require('gulp-htmlmin');
+var jsmin = require('gulp-jsmin');
 
 var tasks = ['scripts', 'index-minify', 'styles', 'bower-to-dist', 'images'];
 
@@ -12,6 +13,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	gulp.src('src/js/*.js')
+		.pipe(jsmin())
 		.pipe(gulp.dest('dist/js'));
 });
 
