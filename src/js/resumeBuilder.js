@@ -1,6 +1,6 @@
 (function() {
 	var bio = {
-		name: "marioNuevo",
+		name: "marioNuevo...",
 		role: ".frontEndWebDeveloper",
 		welcomeMessage: "Welcome to my resume page",
 		contacts: {
