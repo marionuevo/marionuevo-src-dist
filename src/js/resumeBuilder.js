@@ -59,31 +59,31 @@
 			dates: "2014",
 			description: "A first simple Arcade Game running HTML5 canvas and JS",
 			image: "images/arcadegame.png",
-			url: "http://www.marionuevo.com/frontend-nanodegree-arcade-game/",
-			demo: "http://www.marionuevo.com/demos/arcade-game/"
+			url: "http://www.github.com/marionuevo/frontend-nanodegree-arcade-game/",
+			demo: "http://www.marionuevo.com/frontend-nanodegree-arcade-game/"
 		},
 		{
 			title: ".feedreaderJasmineTestSuite",
 			dates: "2015",
 			description: "A feedreader app under Jasmine test environement",
 			image: "images/feedreader.png",
-			url: "http://www.marionuevo.com/frontend-nanodegree-feedreader/",
-			demo: "http://www.marionuevo.com/demos/feedreader/"
+			url: "http://www.github.com/marionuevo/frontend-nanodegree-feedreader/",
+			demo: "http://www.marionuevo.com/frontend-nanodegree-feedreader/"
 		},
 		{
 			title: ".neighborhoodMap",
 			dates: "2015",
 			description: "Frontend nanodegree Neighborhood Map Single Page Application. Using Knockout, Bootstrap, jQuery, Google Maps API and Google StreetView API.",
 			image: "images/neighborhoodmap.png",
-			url: "http://www.marionuevo.com/neighborhood-map/",
-			demo: "http://www.marionuevo.com/demos/neighborhood-map/"
+			url: "http://www.github.com/marionuevo/neighborhood-map/",
+			demo: "http://www.marionuevo.com/neighborhood-map/"
 		},
 		{
 			title: ".self",
 			dates: "2015",
 			description: "My Own Portfilio / Resume. Using AngularJS, Bootstrap and jQuery. Optimized using Gulp.",
 			image: "images/portfolio.png",
-			url: "http://www.marionuevo.com/marionuevo-src-dist",
+			url: "https://www.github.com/marionuevo/marionuevo.github.io",
 			demo: "http://www.marionuevo.com/"
 		}];
 
