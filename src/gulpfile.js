@@ -15,7 +15,18 @@ gulp.task('less', function () {
 	gulp.src(['less/custom-styles.less', 'css/style.css'])
 	.pipe(less())
 	.pipe(uncss({
-		html: ['index.html']
+		html: ['index.html'],
+		ignore: [
+			".fade",
+			".fade.in",
+			".collapse",
+			".collapse.in",
+			".collapsing",
+			".alert-danger",
+			".open",
+			"/open+/",
+			".dark-row"
+	   ]
 	}))
 	.pipe(concat('styles.css'))
 	.pipe(minifyCSS())
