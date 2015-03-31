@@ -47,6 +47,8 @@ gulp.task('index-minify', function() {
 });
 
 gulp.task('bower-to-dist', function() {
+	gulp.src(['bower_components/bootstrap/fonts/*.*'])
+		.pipe(gulp.dest('../dist/fonts'));
 	gulp.src(['bower_components/bootstrap/dist/js/bootstrap.min.js'])
 		.pipe(gulp.dest('../dist/js'));	
 	gulp.src(['bower_components/jquery/dist/jquery.min.js'])

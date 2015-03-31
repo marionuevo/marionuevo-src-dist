@@ -6,9 +6,6 @@
 		<title>.self</title>
 		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		
-
-
 	</head>
 	<body class="ng-cloak" ng-controller="resumeController as resume">
 
@@ -147,9 +144,9 @@
 					<div class="col-xs-12">
 						<blockquote ng-repeat="work in resume.works">
 							<h4>{{work.employer}} - {{work.title}}</h4>
-							<div>{{work.dates}}</div>
+							<div><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{work.dates}}</div>
 							<div>{{work.description}}</div>
-							<footer>{{work.location}}</footer>
+							<span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span class="location">{{work.location}}</span>
 						</blockquote>
 					</div>
 				</div>
