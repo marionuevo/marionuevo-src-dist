@@ -5,17 +5,18 @@ var gulp = require('gulp'),
 	less = require('gulp-less'),
 	uncss = require('gulp-uncss'),
 	concat = require('gulp-concat'),
+	imageop = require('gulp-image-optimization'),
 
 	tasks = ['less', 'scripts', 'index-minify', 'bower-to-dist', 'images'];
 
 gulp.task('less', function () {
 	gulp.src(['less/custom-styles.less', 'css/stylesheet.css'])
-    .pipe(less())
-    .pipe(uncss({
+	.pipe(less())
+	.pipe(uncss({
 		html: ['index.html']
 	}))
 	.pipe(concat('styles.css'))
-    .pipe(minifyCSS())
+	.pipe(minifyCSS())
 	.pipe(gulp.dest('../dist/css'));
 });
 
@@ -26,7 +27,12 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('images', function() {
-	gulp.src('images/*')
+	gulp.src(['images/*.jpg','images/*.png'])
+		.pipe(imageop({
+			optimizationLevel: 5,
+			progressive: true,
+			interlaced: true
+		}))
 		.pipe(gulp.dest('../dist/images'));
 });
 
