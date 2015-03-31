@@ -7,10 +7,12 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	imageop = require('gulp-image-optimization'),
 
-	tasks = ['less', 'scripts', 'index-minify', 'bower-to-dist', 'images'];
+	watchTasks = ['less', 'scripts', 'index-minify', 'bower-to-dist'];
+	tasks = ['less', 'scripts', 'index-minify', 'bower-to-dist', 'watch'];
+
 
 gulp.task('less', function () {
-	gulp.src(['less/custom-styles.less', 'css/stylesheet.css'])
+	gulp.src(['less/custom-styles.less', 'css/style.css'])
 	.pipe(less())
 	.pipe(uncss({
 		html: ['index.html']
@@ -26,6 +28,7 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('../dist/js'));
 });
 
+// This task is not invoked by default. Use 'gulp images' for running it.
 gulp.task('images', function() {
 	gulp.src(['images/*.jpg','images/*.png'])
 		.pipe(imageop({
@@ -53,9 +56,9 @@ gulp.task('bower-to-dist', function() {
 });
 
 gulp.task('watch', function (){
-	gulp.watch(['less/*.less', 'css/*.css', '*.html', 'images/*', 'js/*.js'], tasks);
+	gulp.watch(['less/*.less', 'css/*.css', '*.html', 'images/*', 'js/*.js'], watchTasks);
 })
 
-tasks.push('watch');
+// TODO: use gulp-watch module to launch only the required task for each folder watched.
 
 gulp.task('default', tasks);

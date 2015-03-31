@@ -7,8 +7,8 @@ RGB: 31 61 122*/
  
 /* Primary Variants */
 @primaryLight: hsl(hue(@primary), 100%, 70%);
-@primaryDark: hsl(hue(@primary), 60%, 40%);
-@primaryFaded: hsl(hue(@primary), 60%, 65%);
+@primaryDark: hsl(hue(@primary), 59%, 40%);
+@primaryFaded: hsl(hue(@primary), 59%, 85%);
  
 /* 180degree Variants */
 @variant: spin((@primary), 180);
@@ -23,6 +23,7 @@ RGB: 31 61 122*/
 @cornerFaded: hsl(hue(@corner), 60%, 65%);
 
 @brand-primary: @primary;
+@gray-lighte:            lighten(@gray-base, 80%); // #777
 
 //== Scaffolding
 //
@@ -39,3 +40,6 @@ RGB: 31 61 122*/
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
 @link-hover-decoration: none;
+
+//** Blockquote border color
+@blockquote-border-color: @primaryFaded;
