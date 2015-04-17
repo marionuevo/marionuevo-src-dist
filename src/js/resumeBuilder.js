@@ -17,6 +17,13 @@
 
 	var works = [
 		{
+			employer: "Udacity",
+			title: "Udacity Code Reviewer",
+			location: "Adeje, Canary Islands",
+			dates: "2015-today",
+			description: "I am one of the very first Udacity Code Reviewers, where I review student project submissions. For each submission, I do both a thorough code review and project evaluation. I strive to give actionable and helpful feedback to students while also improving my code reviewing skills at the same time."
+		},
+		{
 			employer: "AENA",
 			title: "Aerial Navigation Systems (CNS) Tower Manager",
 			location: "Tenerife Sur Airport, Canary Islands",
